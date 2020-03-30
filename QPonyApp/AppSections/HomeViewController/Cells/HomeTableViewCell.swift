@@ -20,8 +20,8 @@ class HomeTableViewCell: UITableViewCell {
         dateLabel.text = date
         if let mid = rates.mid {
             currencyValueLabel.text = mid.toPriceString()
-        } else if let ask = rates.ask {
-            currencyValueLabel.text = ask.toPriceString()
+        } else if let ask = rates.ask, let bid = rates.bid {
+            currencyValueLabel.text = "Sprzedaż: \(ask.toPriceString())\nKupno: \(bid.toPriceString())"
         }
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 
 extension Float {
     func toPriceString() -> String {
-        return String(format: "%.2f zł", self)
+        return "\(self) zł"
     }
     
     func toString() -> String {

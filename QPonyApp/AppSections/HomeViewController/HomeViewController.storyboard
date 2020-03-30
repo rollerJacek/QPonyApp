@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jcc-fA-UWS">
-                                <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                                <rect key="frame" x="10" y="54" width="394" height="32"/>
                                 <segments>
                                     <segment title="A"/>
                                     <segment title="B"/>
@@ -27,7 +27,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fns-31-DZv">
-                                <rect key="frame" x="0.0" y="75" width="414" height="787"/>
+                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -35,11 +35,11 @@
                         <constraints>
                             <constraint firstItem="MR1-IQ-KzQ" firstAttribute="bottom" secondItem="Fns-31-DZv" secondAttribute="bottom" id="GKO-1G-bjW"/>
                             <constraint firstItem="MR1-IQ-KzQ" firstAttribute="trailing" secondItem="Fns-31-DZv" secondAttribute="trailing" id="OEr-Ke-dit"/>
-                            <constraint firstItem="Fns-31-DZv" firstAttribute="top" secondItem="jcc-fA-UWS" secondAttribute="bottom" id="Y2k-IE-dX2"/>
+                            <constraint firstItem="Fns-31-DZv" firstAttribute="top" secondItem="jcc-fA-UWS" secondAttribute="bottom" constant="10" id="Y2k-IE-dX2"/>
                             <constraint firstItem="Fns-31-DZv" firstAttribute="leading" secondItem="MR1-IQ-KzQ" secondAttribute="leading" id="Yte-vb-Qqb"/>
-                            <constraint firstItem="jcc-fA-UWS" firstAttribute="leading" secondItem="MR1-IQ-KzQ" secondAttribute="leading" id="c1V-ZN-4xb"/>
-                            <constraint firstItem="jcc-fA-UWS" firstAttribute="top" secondItem="MR1-IQ-KzQ" secondAttribute="top" id="wnx-Yo-ftg"/>
-                            <constraint firstItem="MR1-IQ-KzQ" firstAttribute="trailing" secondItem="jcc-fA-UWS" secondAttribute="trailing" id="zeH-qL-ZXo"/>
+                            <constraint firstItem="jcc-fA-UWS" firstAttribute="leading" secondItem="MR1-IQ-KzQ" secondAttribute="leading" constant="10" id="c1V-ZN-4xb"/>
+                            <constraint firstItem="jcc-fA-UWS" firstAttribute="top" secondItem="MR1-IQ-KzQ" secondAttribute="top" constant="10" id="wnx-Yo-ftg"/>
+                            <constraint firstItem="MR1-IQ-KzQ" firstAttribute="trailing" secondItem="jcc-fA-UWS" secondAttribute="trailing" constant="10" id="zeH-qL-ZXo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MR1-IQ-KzQ"/>
                     </view>
