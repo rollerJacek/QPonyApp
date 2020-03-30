@@ -14,9 +14,21 @@
                     <view key="view" contentMode="scaleToFill" id="NKj-MU-d0t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="TyG-cU-8Uk">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TyG-cU-8Uk" firstAttribute="centerY" secondItem="NKj-MU-d0t" secondAttribute="centerY" id="rna-If-Tnn"/>
+                            <constraint firstItem="TyG-cU-8Uk" firstAttribute="centerX" secondItem="NKj-MU-d0t" secondAttribute="centerX" id="tO3-ci-iuR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SsH-lg-3Nx"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="TyG-cU-8Uk" id="P5r-Qj-hiI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLv-Pb-bw2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

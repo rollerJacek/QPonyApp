@@ -14,12 +14,10 @@ class BaseViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupData()
         setupUI()
         setupTableView()
     }
     
     func setupUI() {}
     func setupTableView() {}
-    func setupData() {}
 }

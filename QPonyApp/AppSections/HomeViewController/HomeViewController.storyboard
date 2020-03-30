@@ -7,16 +7,46 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Kursy walut-->
         <scene sceneID="U2O-uP-BHU">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="eDY-fv-NGR" customClass="HomeViewController" customModule="QPonyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" title="Kursy walut" id="eDY-fv-NGR" customClass="HomeViewController" customModule="QPonyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8cJ-cS-00A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jcc-fA-UWS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                                <segments>
+                                    <segment title="A"/>
+                                    <segment title="B"/>
+                                    <segment title="C"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeTable:" destination="eDY-fv-NGR" eventType="valueChanged" id="8q2-ji-woL"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fns-31-DZv">
+                                <rect key="frame" x="0.0" y="75" width="414" height="787"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MR1-IQ-KzQ" firstAttribute="bottom" secondItem="Fns-31-DZv" secondAttribute="bottom" id="GKO-1G-bjW"/>
+                            <constraint firstItem="MR1-IQ-KzQ" firstAttribute="trailing" secondItem="Fns-31-DZv" secondAttribute="trailing" id="OEr-Ke-dit"/>
+                            <constraint firstItem="Fns-31-DZv" firstAttribute="top" secondItem="jcc-fA-UWS" secondAttribute="bottom" id="Y2k-IE-dX2"/>
+                            <constraint firstItem="Fns-31-DZv" firstAttribute="leading" secondItem="MR1-IQ-KzQ" secondAttribute="leading" id="Yte-vb-Qqb"/>
+                            <constraint firstItem="jcc-fA-UWS" firstAttribute="leading" secondItem="MR1-IQ-KzQ" secondAttribute="leading" id="c1V-ZN-4xb"/>
+                            <constraint firstItem="jcc-fA-UWS" firstAttribute="top" secondItem="MR1-IQ-KzQ" secondAttribute="top" id="wnx-Yo-ftg"/>
+                            <constraint firstItem="MR1-IQ-KzQ" firstAttribute="trailing" secondItem="jcc-fA-UWS" secondAttribute="trailing" id="zeH-qL-ZXo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MR1-IQ-KzQ"/>
                     </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="tableView" destination="Fns-31-DZv" id="pTs-ya-YFA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLS-wl-42g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

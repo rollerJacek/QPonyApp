@@ -10,4 +10,15 @@ import UIKit
 
 class DataLoaderViewController: BaseViewController {
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    override func setupUI() {
+        super.setupUI()
+        activityIndicator.startAnimating()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        activityIndicator.stopAnimating()
+    }
 }

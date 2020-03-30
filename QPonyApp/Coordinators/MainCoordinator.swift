@@ -22,8 +22,10 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func showDetails() {
+    func showDetails(about currency: TablesRatesModel, table: ApiUrls.table) {
         let vc = DetailsViewController.instantiate(storyboardName: Storyboards.detailsViewController)
+        vc.currency = currency
+        vc.table = table
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }

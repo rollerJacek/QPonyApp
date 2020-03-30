@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="QPonyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4I-AD-kgD">
+                        <rect key="frame" x="10" y="10" width="355" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="bat (Tajlandia)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7A-SB-5XT">
+                                <rect key="frame" x="0.0" y="0.0" width="286" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="THB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilM-9t-DkO">
+                                <rect key="frame" x="0.0" y="18" width="286" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0.1253 zł" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fem-9N-Vih">
+                                <rect key="frame" x="286" y="0.0" width="69" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-03-30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="80" translatesAutoresizingMaskIntoConstraints="NO" id="tre-lg-EBg">
+                                <rect key="frame" x="0.0" y="46" width="286" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Fem-9N-Vih" secondAttribute="trailing" id="6BE-WH-Ozi"/>
+                            <constraint firstAttribute="bottom" secondItem="tre-lg-EBg" secondAttribute="bottom" id="8sb-wF-x9O"/>
+                            <constraint firstItem="l7A-SB-5XT" firstAttribute="leading" secondItem="a4I-AD-kgD" secondAttribute="leading" id="AVu-b8-y5R"/>
+                            <constraint firstItem="ilM-9t-DkO" firstAttribute="leading" secondItem="a4I-AD-kgD" secondAttribute="leading" id="DcC-f1-Zx9"/>
+                            <constraint firstItem="l7A-SB-5XT" firstAttribute="top" secondItem="a4I-AD-kgD" secondAttribute="top" id="Ek0-nm-fWh"/>
+                            <constraint firstItem="Fem-9N-Vih" firstAttribute="top" secondItem="a4I-AD-kgD" secondAttribute="top" id="L2X-BD-Mmx"/>
+                            <constraint firstItem="ilM-9t-DkO" firstAttribute="top" secondItem="l7A-SB-5XT" secondAttribute="bottom" id="M3b-3E-zow"/>
+                            <constraint firstItem="tre-lg-EBg" firstAttribute="leading" secondItem="a4I-AD-kgD" secondAttribute="leading" id="Oro-6V-Qhm"/>
+                            <constraint firstAttribute="bottom" secondItem="Fem-9N-Vih" secondAttribute="bottom" id="bjY-yt-dD0"/>
+                            <constraint firstItem="Fem-9N-Vih" firstAttribute="leading" secondItem="ilM-9t-DkO" secondAttribute="trailing" id="fbd-WO-lge"/>
+                            <constraint firstItem="Fem-9N-Vih" firstAttribute="leading" secondItem="tre-lg-EBg" secondAttribute="trailing" id="gFS-7m-8wq"/>
+                            <constraint firstItem="tre-lg-EBg" firstAttribute="top" secondItem="ilM-9t-DkO" secondAttribute="bottom" constant="10" id="n1m-Du-Haz"/>
+                            <constraint firstItem="Fem-9N-Vih" firstAttribute="leading" secondItem="l7A-SB-5XT" secondAttribute="trailing" id="ygr-eW-DFa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a4I-AD-kgD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4TE-CE-WGI"/>
+                    <constraint firstAttribute="bottom" secondItem="a4I-AD-kgD" secondAttribute="bottom" constant="10" id="CJL-Kl-mWa"/>
+                    <constraint firstAttribute="trailing" secondItem="a4I-AD-kgD" secondAttribute="trailing" constant="10" id="DEn-m5-nqi"/>
+                    <constraint firstItem="a4I-AD-kgD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FKT-OP-gKL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="currencyCodeLabel" destination="ilM-9t-DkO" id="oVR-g9-G3O"/>
+                <outlet property="currencyNameLabel" destination="l7A-SB-5XT" id="28P-i2-l5h"/>
+                <outlet property="currencyValueLabel" destination="Fem-9N-Vih" id="ufj-wC-NUw"/>
+                <outlet property="dateLabel" destination="tre-lg-EBg" id="C6j-rF-jKL"/>
+            </connections>
+            <point key="canvasLocation" x="171.73913043478262" y="188.16964285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
