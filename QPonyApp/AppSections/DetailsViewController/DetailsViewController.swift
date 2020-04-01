@@ -105,7 +105,7 @@ extension DetailsViewController: DetailsViewModelDelegate {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.tableView.reloadData()
-            if let _ = self.dataLoader?.activityIndicator {
+            if let isLoaded = self.dataLoader?.isViewLoaded, isLoaded {
                 self.dismissDataLoader()
             } else {
                 self.dataLoader?.didEndLoading = { [weak self] in
