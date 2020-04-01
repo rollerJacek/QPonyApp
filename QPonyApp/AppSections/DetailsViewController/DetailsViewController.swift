@@ -105,11 +105,21 @@ extension DetailsViewController: DetailsViewModelDelegate {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.tableView.reloadData()
-            self.dataLoader?.dismiss(animated: true) { [weak self] in
-                guard let self = self else { return }
-                if self.viewModel.currencyCount() == 0 {
-                    self.dateFormattingError(error: .noData)
+            if let _ = self.dataLoader?.activityIndicator {
+                self.dismissDataLoader()
+            } else {
+                self.dataLoader?.didEndLoading = { [weak self] in
+                    self?.dismissDataLoader()
                 }
+            }
+        }
+    }
+    
+    private func dismissDataLoader() {
+        self.dataLoader?.dismiss(animated: true) { [weak self] in
+            guard let self = self else { return }
+            if self.viewModel.currencyCount() == 0 {
+                self.dateFormattingError(error: .noData)
             }
         }
     }

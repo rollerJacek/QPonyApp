@@ -37,7 +37,6 @@ class DetailsViewModel {
             delegate?.didStartFetching()
             ConnectionService.getCurrencyInfo(table: table, currency: currency.code, startDate: startDate, endDate: endDate) { [weak self] result in
                 self?.currencyInfo = result
-                sleep(1)
                 self?.delegate?.didEndFetching()
             }
         }

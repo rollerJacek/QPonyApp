@@ -33,8 +33,8 @@
 		6B28FDCC243218A800E95E77 /* TableCellsIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B28FDCB243218A800E95E77 /* TableCellsIdentifiers.swift */; };
 		6B28FDCE2432445700E95E77 /* UITextField+DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B28FDCD2432445700E95E77 /* UITextField+DatePicker.swift */; };
 		6B28FDD024324FC500E95E77 /* UIDatePicker+FormatDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B28FDCF24324FC500E95E77 /* UIDatePicker+FormatDate.swift */; };
-		6B28FDD8243255FA00E95E77 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B28FDD6243255FA00E95E77 /* DetailsTableViewCell.swift */; };
-		6B28FDD9243255FA00E95E77 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B28FDD7243255FA00E95E77 /* DetailsTableViewCell.xib */; };
+		6B68ACD6243481B60090F7E5 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B68ACD4243481B60090F7E5 /* DetailsTableViewCell.xib */; };
+		6B68ACD7243481B60090F7E5 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B68ACD5243481B60090F7E5 /* DetailsTableViewCell.swift */; };
 		6BE7805724328A7300463241 /* SingleCurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7805624328A7300463241 /* SingleCurrencyModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,8 +67,8 @@
 		6B28FDCB243218A800E95E77 /* TableCellsIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellsIdentifiers.swift; sourceTree = "<group>"; };
 		6B28FDCD2432445700E95E77 /* UITextField+DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+DatePicker.swift"; sourceTree = "<group>"; };
 		6B28FDCF24324FC500E95E77 /* UIDatePicker+FormatDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIDatePicker+FormatDate.swift"; path = "../../../../../UIDatePicker+FormatDate.swift"; sourceTree = "<group>"; };
-		6B28FDD6243255FA00E95E77 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailsTableViewCell.swift; path = ../../../../../../DetailsTableViewCell.swift; sourceTree = "<group>"; };
-		6B28FDD7243255FA00E95E77 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailsTableViewCell.xib; path = ../../../../../../DetailsTableViewCell.xib; sourceTree = "<group>"; };
+		6B68ACD4243481B60090F7E5 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
+		6B68ACD5243481B60090F7E5 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		6BE7805624328A7300463241 /* SingleCurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCurrencyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,7 +202,7 @@
 		6B28FD9C2431FC2700E95E77 /* DetailsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6B28FDD3243255C600E95E77 /* Cell */,
+				6B68ACD32434815D0090F7E5 /* Cell */,
 				6B28FDA92431FE8600E95E77 /* DetailsViewController.storyboard */,
 				6B28FDA02431FC7200E95E77 /* DetailsViewController.swift */,
 				6B28FDB12432048E00E95E77 /* DetailsViewModel.swift */,
@@ -247,11 +247,11 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		6B28FDD3243255C600E95E77 /* Cell */ = {
+		6B68ACD32434815D0090F7E5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				6B28FDD6243255FA00E95E77 /* DetailsTableViewCell.swift */,
-				6B28FDD7243255FA00E95E77 /* DetailsTableViewCell.xib */,
+				6B68ACD5243481B60090F7E5 /* DetailsTableViewCell.swift */,
+				6B68ACD4243481B60090F7E5 /* DetailsTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 				6B28FD832431F9D700E95E77 /* Assets.xcassets in Resources */,
 				6B28FDC72432121000E95E77 /* HomeTableViewCell.xib in Resources */,
 				6B28FDA82431FE6500E95E77 /* DataLoaderViewController.storyboard in Resources */,
-				6B28FDD9243255FA00E95E77 /* DetailsTableViewCell.xib in Resources */,
+				6B68ACD6243481B60090F7E5 /* DetailsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +347,7 @@
 				6B28FDB22432048E00E95E77 /* DetailsViewModel.swift in Sources */,
 				6B28FDB02432024D00E95E77 /* Storyboarded.swift in Sources */,
 				6B28FDBC24320BAC00E95E77 /* Connection+Request.swift in Sources */,
-				6B28FDD8243255FA00E95E77 /* DetailsTableViewCell.swift in Sources */,
+				6B68ACD7243481B60090F7E5 /* DetailsTableViewCell.swift in Sources */,
 				6B28FDCC243218A800E95E77 /* TableCellsIdentifiers.swift in Sources */,
 				6B28FD7C2431F9D700E95E77 /* SceneDelegate.swift in Sources */,
 				6B28FDA12431FC7200E95E77 /* DetailsViewController.swift in Sources */,
